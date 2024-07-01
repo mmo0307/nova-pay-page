@@ -1,0 +1,59 @@
+@font-face {
+  font-weight: 900;
+  font-family: 'NovaPoshta';
+  font-style: normal;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-Black.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-Black.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-Black.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'NovaPoshta';
+  font-style: normal;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-Bold.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-Bold.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-Bold.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'NovaPoshta';
+  font-style: italic;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-Italic.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-Italic.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-Italic.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'NovaPoshta';
+  font-style: normal;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-Medium.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-Medium.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-Medium.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'NovaPoshta';
+  font-style: normal;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-Regular.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-Regular.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-Regular.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: 'NovaPoshta';
+  font-style: normal;
+  src: url('fonts/nova-poshta/OTF/NovaPoshta-RegularCond.otf') format('otf'),
+  url('fonts/nova-poshta/TTF/NovaPoshta-RegularCond.ttf') format('truetype'),
+  url('fonts/nova-poshta/WOFF/NovaPoshta-RegularCond.woff') format('woff'),
+  url('fonts/nova-poshta/WOFF2/NovaPoshta-RegularCond.woff2') format('woff2');
+}

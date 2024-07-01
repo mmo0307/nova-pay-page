@@ -1,0 +1,133 @@
+@import url("config/base.css");
+
+body {
+  background-color: var(--gray);
+}
+
+.logo {
+  width: 207px;
+
+  height: 38px;
+}
+
+.logo-dds {
+  width: 81px;
+
+  height: 31px;
+}
+
+.logo-mastercard {
+  width: 112px;
+
+  height: 37px;
+}
+
+.logo-visa {
+  width: 68px;
+
+  height: 39px;
+}
+
+.wrapper {
+  background: var(--white);
+
+  border-radius: 16px;
+
+  padding: 20px 40px;
+
+  margin: 34px auto 0;
+
+  width: 460px;
+
+  height: 800px;
+}
+
+.content {
+  margin-top: 40px;
+
+  display: grid;
+
+  gap: 20px;
+}
+
+.divider {
+  background-color: var(--gray-25);
+
+  width: 100%;
+
+  height: 1px;
+}
+
+.block-form {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.block-form span {
+  font-family: var(--font-inter);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  white-space: nowrap;
+}
+
+.title-number-express {
+  font-family: var(--font-inter);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  color: var(--gray-50);
+}
+
+.title {
+  font-family: var(--font-inter);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 22px;
+}
+
+.price {
+  font-family: var(--font-np);
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  line-height: 40px;
+}
+
+.merchant {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.details-block {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.details-content-block-show {
+  display: none;
+}
