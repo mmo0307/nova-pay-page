@@ -4,11 +4,20 @@
 
 :root {
   --white: #FFF;
+  --white-25: #F2F2F5;
 
   --gray: #F6F6F9;
   --gray-25: #E2E8F0;
   --gray-50: #475569;
   --gray-75: #141414;
+  --gray-100: #94A3B8;
+  --gray-125: #BBBCBC;
+  --gray-150: #8a8585;
+
+  --black: #000;
+
+  --red: #ec1f2b;
+  --red-25: #DA292B;
 
   /* Font */
   --font-np: 'NovaPoshta', sans-serif;

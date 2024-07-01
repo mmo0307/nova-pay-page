@@ -23,23 +23,92 @@
              <div class="details-block">
                  <p class="title">Деталi посилки</p>
 
-                 <img src="assets/icons/chevron-down.svg" alt="arrow">
+                 <img class="arrow-icon" src="assets/icons/chevron-down.svg" alt="arrow">
              </div>
 
-             <div class="details-content-block">
-
+             <div id="drop-down-content" class="details-content-block">
+                Content Content Content Content Content Content Content
              </div>
-             
+
              <div class="divider"></div>
 
              <p class="title">Спосiб оплати</p>
 
+             <div class="buttons-block">
+                 <button class="button secondary">Pay</button>
+
+                 <button class="button primary">
+                     <img src="assets/images/google.png" alt="Google Image">
+                     Pay
+                 </button>
+             </div>
+
              <div class="block-form">
+
                  <div class="divider"></div>
 
                  <span>Aбо оплатити карткою</span>
 
                  <div class="divider"></div>
+             </div>
+
+            <div class="list-card">
+                <div class="card">
+                    <img src="assets/images/VISA.jpg" alt="VISA">
+
+                    <span class="card-number">Visa •••• 6913</span>
+
+                    <img class="icon" src="assets/icons/trash-04.svg" alt="trash">
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/VISA.jpg" alt="VISA">
+
+                    <span class="card-number">Visa •••• 6913</span>
+
+                    <img class="icon" src="assets/icons/trash-04.svg" alt="trash">
+                </div>
+
+                <button class="button secondary">
+                    <img src="assets/icons/plus.svg" alt="plus">
+                    Додати нову картку
+                </button>
+            </div>
+
+             <div class="block-form">
+
+                 <div class="divider"></div>
+
+                 <span>Оплата новою карткою</span>
+
+                 <div class="divider"></div>
+             </div>
+
+             <div class="form-wrapper">
+                 <form class="form">
+                        <input type="text" placeholder="Номер картки" class="number-card">
+
+                        <div class="info-block">
+                            <input type="text" placeholder="Дата (MM/YY)" class="data-input">
+
+                            <input type="text" placeholder="CVV" class="cvv">
+                        </div>
+
+                     <div class="checkbox-block">
+                         <div class="checkbox-input checkbox-input-active">
+                                <img src="assets/icons/checkbox-icon.svg" alt="check">
+                         </div>
+
+                         <span class="checkbox-label checkbox-label-active">
+                             Зберегти картку для подальших оплат
+                         </span>
+                     </div>
+
+                    </form>
+
+                 <button disabled class="button primary disabled">
+                     Сплатити ₴ 450
+                 </button>
              </div>
 
              <div class="divider"></div>
@@ -53,5 +122,7 @@
              </div>
          </div>
      </div>
+
+     <script src="./scripts/main.js"></script>
 </body>
 </html>
