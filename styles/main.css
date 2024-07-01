@@ -345,3 +345,41 @@ input:focus {
 .icon {
   cursor: pointer;
 }
+
+.apple-logo {
+  width: 16px;
+
+  height: 16px;
+}
+
+.close {
+  display: none;
+
+  width: 24px;
+
+  height: 24px;
+}
+
+@media (max-width: 430px) {
+  .wrapper {
+    margin: 0;
+
+    padding: 0;
+
+    width: auto;
+  }
+
+  .content {
+    max-width: 360px;
+
+    margin: 40px auto 0;
+  }
+
+  .cvv {
+    width: 101px;
+  }
+
+  .close {
+    display: block;
+  }
+}

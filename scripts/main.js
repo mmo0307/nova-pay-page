@@ -2,6 +2,7 @@ const dropdownDetailsBlock = document.querySelector('.details-block');
 const dropdownImg = document.querySelector('.details-block img');
 const dropdownContent = document.getElementById('drop-down-content');
 
+//dropdown
 dropdownDetailsBlock.addEventListener('click', function() {
     if (dropdownContent.style.display === 'block') {
         dropdownContent.style.display = 'none';
@@ -11,5 +12,38 @@ dropdownDetailsBlock.addEventListener('click', function() {
         dropdownContent.style.display = 'block';
 
         dropdownImg.classList.add('rotate');
+    }
+});
+
+//number card
+document.getElementById('cardNumberInput').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+
+    //max length 16 symbols or set 20 symbols
+    if (value.length > 16) {
+        value = value.slice(0, 16);
+    }
+
+    value = value.match(/.{1,4}/g)?.join(' ') || value;
+    e.target.value = value;
+});
+
+//date-input
+document.getElementById('dateInput').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+    if (value.length > 4) {
+        value = value.slice(0, 4);
+    }
+    if (value.length > 2) {
+        value = value.slice(0, 2) + '/' + value.slice(2);
+    }
+    e.target.value = value;
+});
+
+//cvv
+document.getElementById('cvvInput').addEventListener('input', function(e) {
+    let value = e.target.value;
+    if (value.length > 3) {
+        e.target.value = value.slice(0, 3);
     }
 });

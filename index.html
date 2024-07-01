@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
      <div class="wrapper">
-         <img class="logo" src="assets/images/Logo.png" alt="Logo">
+         <div>
+             <img class="close" src="assets/icons/x-close.svg" alt="Close">
+
+             <img class="logo" src="assets/images/Logo.png" alt="Logo">
+         </div>
+
 
          <div class="content">
              <div>
@@ -35,7 +41,10 @@
              <p class="title">Спосiб оплати</p>
 
              <div class="buttons-block">
-                 <button class="button secondary">Pay</button>
+                 <button class="button secondary">
+                     <img class="icon apple-logo" src="assets/icons/apple-logo.svg" alt="Apple">
+                     Pay
+                 </button>
 
                  <button class="button primary">
                      <img src="assets/images/google.png" alt="Google Image">
@@ -86,12 +95,12 @@
 
              <div class="form-wrapper">
                  <form class="form">
-                        <input type="text" placeholder="Номер картки" class="number-card">
+                        <input type="text" placeholder="Номер картки" class="number-card" id="cardNumberInput">
 
                         <div class="info-block">
-                            <input type="text" placeholder="Дата (MM/YY)" class="data-input">
+                            <input type="text" placeholder="Дата (MM/YY)" class="data-input" id="dateInput">
 
-                            <input type="text" placeholder="CVV" class="cvv">
+                            <input max="3" maxlength="3" type="number" placeholder="CVV" class="cvv" id="cvvInput">
                         </div>
 
                      <div class="checkbox-block">
