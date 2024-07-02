@@ -15,6 +15,27 @@ dropdownDetailsBlock.addEventListener('click', function() {
     }
 });
 
+//checkbox
+document.getElementById('checkbox').addEventListener('click', function() {
+    const checkbox = document.getElementById('checkbox');
+    const checkboxImg = document.querySelector('.checkbox-input img');
+    const checkboxLabel = document.getElementById('checkbox-label');
+
+    if (checkbox.classList.contains('checkbox-input-active')) {
+        checkbox.classList.remove('checkbox-input-active');
+
+        checkboxImg.style.display = 'none';
+
+        checkboxLabel.classList.remove('checkbox-label-active');
+    } else {
+        checkbox.classList.add('checkbox-input-active');
+
+        checkboxImg.style.display = 'block';
+
+        checkboxLabel.classList.add('checkbox-label-active');
+    }
+})
+
 //number card
 document.getElementById('cardNumberInput').addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -47,3 +68,33 @@ document.getElementById('cvvInput').addEventListener('input', function(e) {
         e.target.value = value.slice(0, 3);
     }
 });
+
+//focus input
+document.addEventListener('DOMContentLoaded', function() {
+    function toggleLabelClass(input, addClass) {
+        const label = document.querySelector(`label[for="${input.id}"]`);
+
+        if (addClass) {
+            label.classList.add('label-input-active');
+        } else {
+            label.classList.remove('label-input-active');
+        }
+    }
+
+    const inputs = document.querySelectorAll('.input-block input');
+
+    inputs.forEach(input => {
+        if (input.value) {
+            toggleLabelClass(input, true);
+        }
+
+        input.addEventListener('focus', () => {
+            toggleLabelClass(input, true);
+        });
+
+        input.addEventListener('blur', () => {
+            toggleLabelClass(input, !!input.value);
+        });
+    });
+});
+
