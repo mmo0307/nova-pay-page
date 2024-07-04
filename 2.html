@@ -84,7 +84,42 @@
                  <div class="divider"></div>
              </div>
 
-             <div class="form-wrapper">
+            <div class="list-card">
+                <div class="card">
+                    <img src="assets/images/VISA.jpg" alt="VISA">
+
+                    <span class="card-number">Visa •••• 6913</span>
+
+                    <img class="icon" src="assets/icons/trash-04.svg" alt="trash">
+                </div>
+
+                <div class="card">
+                    <img src="assets/images/VISA.jpg" alt="VISA">
+
+                    <span class="card-number">Visa •••• 6913</span>
+
+                    <img class="icon" src="assets/icons/trash-04.svg" alt="trash">
+                </div>
+
+                <button id="addCard" class="button secondary button-add-card">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12.7905V20.2905H13V12.7905H20.5V11.7905H13V4.29053H12V11.7905H4.5V12.7905H12Z" fill="black"/>
+                    </svg>
+
+                    Додати нову картку
+                </button>
+            </div>
+
+             <div id="add-card-block-from" class="block-form">
+
+                 <div class="divider"></div>
+
+                 <span>Оплата новою карткою</span>
+
+                 <div class="divider"></div>
+             </div>
+
+             <div id="add-card-form-wrapper" class="form-wrapper">
                  <form class="form">
                      <div class="input-block">
                          <label for="cardNumberInput" class="label-input">
@@ -123,7 +158,7 @@
                          </div>
                     </form>
 
-                 <button disabled class="button primary disabled button-pay">
+                 <button id="add-card-button" disabled class="button primary disabled button-pay">
                      Сплатити ₴ 450
                  </button>
              </div>

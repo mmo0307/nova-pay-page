@@ -164,6 +164,42 @@ input:focus {
   display: none;
 }
 
+.details-content-list {
+  display: grid;
+
+  gap: 20px;
+}
+
+.details-content-list-block {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.details-list-text {
+  font-family: var(--font-inter);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+
+  color: var(--gray-50);
+}
+
+.details-list-text-value {
+  font-family: var(--font-inter);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 22px;
+
+  color: var(--gray-75);
+}
+
 .rotate {
   transform: rotate(180deg);
 }
@@ -268,6 +304,22 @@ input:focus {
    display: grid;
 
    gap: 20px;
+}
+
+#add-card-block-from {
+  display: none;
+}
+
+#add-card-form-wrapper {
+  display: none;
+}
+
+#add-card-button {
+  display: none;
+
+  width: 100%;
+
+  margin-top: 20px;
 }
 
 .info-block {

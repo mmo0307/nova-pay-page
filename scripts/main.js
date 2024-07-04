@@ -15,6 +15,19 @@ dropdownDetailsBlock.addEventListener('click', function() {
     }
 });
 
+//add-card
+document.getElementById('addCard').addEventListener('click', function() {
+    const blockForm = document.getElementById('add-card-block-from');
+    const formWrapper = document.getElementById('add-card-form-wrapper');
+    const buttonPay = document.getElementById('add-card-button');
+    const buttonAddCard = document.getElementById('addCard');
+
+    buttonAddCard.style.display = 'none';
+    blockForm.style.display = 'flex';
+    formWrapper.style.display = 'block';
+    buttonPay.style.display = 'block';
+})
+
 //checkbox
 document.getElementById('checkbox').addEventListener('click', function() {
     const checkbox = document.getElementById('checkbox');
