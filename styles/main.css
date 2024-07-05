@@ -357,15 +357,27 @@ input:focus {
 
   border: 1px solid var(--gray-125);
 
-  background: var(--gray-125);
+  background-color: var(--gray-125);
 
   border-radius: 4px;
 
-  cursor: pointer;
+  cursor: not-allowed;
+}
+
+.checkbox-input-active-disabled {
+  opacity: 50%;
 }
 
 .checkbox-input img {
   display: none;
+}
+
+.checkbox-input-unlock {
+  border-color: var(--black);
+
+  background: none;
+
+  cursor: pointer;
 }
 
 .checkbox-input-active {

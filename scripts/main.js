@@ -15,29 +15,6 @@ dropdownDetailsBlock.addEventListener('click', function() {
     }
 });
 
-//checkbox
-document.getElementById('checkbox').addEventListener('click', function() {
-    const checkbox = document.getElementById('checkbox');
-    const checkboxImg = document.querySelector('.checkbox-input img');
-    const checkboxLabel = document.getElementById('checkbox-label');
-
-    console.log(1);
-
-    if (checkbox.classList.contains('checkbox-input-active')) {
-        checkbox.classList.remove('checkbox-input-active');
-
-        checkboxImg.style.display = 'none';
-
-        checkboxLabel.classList.remove('checkbox-label-active');
-    } else {
-        checkbox.classList.add('checkbox-input-active');
-
-        checkboxImg.style.display = 'block';
-
-        checkboxLabel.classList.add('checkbox-label-active');
-    }
-})
-
 //number card
 document.getElementById('cardNumberInput').addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
@@ -112,13 +89,44 @@ function checkForm() {
     const dateInput = document.getElementById('dateInput').value.replace(/\D/g, '').length === 4;
     const cvvInput = document.getElementById('cvvInput').value.length === 3;
     const button = document.querySelector('.button-pay');
+    const checkbox = document.getElementById('checkbox');
+    const checkboxLabel = document.getElementById('checkbox-label');
 
     if (cardNumber && dateInput && cvvInput) {
         button.disabled = false;
         button.classList.remove('disabled');
+
+        checkbox.classList.add('checkbox-input-unlock');
+        checkbox.classList.remove('checkbox-input-active-disabled');
+
+        checkboxLabel.classList.add('checkbox-label-active');
+
+        checkbox.addEventListener('click', toggleCheckbox);
     } else {
         button.disabled = true;
         button.classList.add('disabled');
+
+        checkbox.classList.remove('checkbox-input-unlock');
+        checkboxLabel.classList.remove('checkbox-label-active');
+
+        if(checkbox.classList.contains('checkbox-input-active')) {
+            checkbox.classList.add('checkbox-input-active-disabled');
+        }
+
+        checkbox.removeEventListener('click', toggleCheckbox);
+    }
+}
+
+function toggleCheckbox() {
+    const checkbox = document.getElementById('checkbox');
+    const checkboxImg = document.querySelector('.checkbox-input img');
+
+    if (checkbox.classList.contains('checkbox-input-active')) {
+        checkbox.classList.remove('checkbox-input-active');
+        checkboxImg.style.display = 'none';
+    } else {
+        checkbox.classList.add('checkbox-input-active');
+        checkboxImg.style.display = 'block';
     }
 }
 
