@@ -15,24 +15,13 @@ dropdownDetailsBlock.addEventListener('click', function() {
     }
 });
 
-//add-card
-document.getElementById('addCard').addEventListener('click', function() {
-    const blockForm = document.getElementById('add-card-block-from');
-    const formWrapper = document.getElementById('add-card-form-wrapper');
-    const buttonPay = document.getElementById('add-card-button');
-    const buttonAddCard = document.getElementById('addCard');
-
-    buttonAddCard.style.display = 'none';
-    blockForm.style.display = 'flex';
-    formWrapper.style.display = 'block';
-    buttonPay.style.display = 'block';
-})
-
 //checkbox
 document.getElementById('checkbox').addEventListener('click', function() {
     const checkbox = document.getElementById('checkbox');
     const checkboxImg = document.querySelector('.checkbox-input img');
     const checkboxLabel = document.getElementById('checkbox-label');
+
+    console.log(1);
 
     if (checkbox.classList.contains('checkbox-input-active')) {
         checkbox.classList.remove('checkbox-input-active');
@@ -111,3 +100,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//add-card
+document.getElementById('addCard').addEventListener('click', function() {
+    const blockForm = document.getElementById('add-card-block-from');
+    const formWrapper = document.getElementById('add-card-form-wrapper');
+    const buttonPay = document.getElementById('add-card-button');
+    const buttonAddCard = document.getElementById('addCard');
+
+    buttonAddCard.style.display = 'none';
+    blockForm.style.display = 'flex';
+    formWrapper.style.display = 'block';
+    buttonPay.style.display = 'block';
+})
