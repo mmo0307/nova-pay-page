@@ -49,6 +49,8 @@ document.getElementById('cardNumberInput').addEventListener('input', function(e)
 
     value = value.match(/.{1,4}/g)?.join(' ') || value;
     e.target.value = value;
+
+    checkForm();
 });
 
 //date-input
@@ -61,6 +63,8 @@ document.getElementById('dateInput').addEventListener('input', function(e) {
         value = value.slice(0, 2) + '/' + value.slice(2);
     }
     e.target.value = value;
+
+    checkForm();
 });
 
 //cvv
@@ -69,6 +73,8 @@ document.getElementById('cvvInput').addEventListener('input', function(e) {
     if (value.length > 3) {
         e.target.value = value.slice(0, 3);
     }
+
+    checkForm();
 });
 
 //focus input
@@ -99,6 +105,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//unlock button
+function checkForm() {
+    const cardNumber = document.getElementById('cardNumberInput').value.replace(/\D/g, '').length === 16;
+    const dateInput = document.getElementById('dateInput').value.replace(/\D/g, '').length === 4;
+    const cvvInput = document.getElementById('cvvInput').value.length === 3;
+    const button = document.querySelector('.button-pay');
+
+    if (cardNumber && dateInput && cvvInput) {
+        button.disabled = false;
+        button.classList.remove('disabled');
+    } else {
+        button.disabled = true;
+        button.classList.add('disabled');
+    }
+}
 
 //add-card
 document.getElementById('addCard').addEventListener('click', function() {
